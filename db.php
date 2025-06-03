@@ -2,7 +2,7 @@
 $host = 'ID465074_1077466.db.webhosting.be';
 $dbname   = 'ID465074_1077466';
 $username = 'ID465074_1077466';
-$password = 'q8j26P7K5Fl903781677';
+$password = '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
