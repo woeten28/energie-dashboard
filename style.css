@@ -1,0 +1,255 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e0efff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #1a3d7c;
+}
+a:hover,a:visited {
+    text-decoration: none;
+}
+main {
+    flex: 1;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header, footer {
+    background-color: #1a3d7c;
+    color: #f0f5ff;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+}
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a3d7c;
+    padding: 0 0px;
+    height: 60px;
+}
+.nav-menu-left,
+.nav-menu-right {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu-left li,
+.nav-menu-right li {
+    margin-right: 20px;
+}
+.nav-menu-left li a,
+.nav-menu-right li a {
+    color: #f0f5ff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 12px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu-left li a:hover,
+.nav-menu-right li a:hover {
+    background-color: #163362;
+}
+
+.logo{
+    height: auto;
+    margin: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+.logo-klein{
+    border-radius: 8px;
+    height: 50px;
+    width: auto;
+}
+#login {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#login form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#login label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+#login input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#login button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#login button:hover {
+    background-color: #0056b3;
+}
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.chart-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.chart-controls label {
+    font-weight: bold;
+}
+
+.chart-controls select {
+    padding: 0.4rem;
+    font-size: 1rem;
+}
+.grafiek-container h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#energyChart {
+    width: 100% !important;
+    max-width: 1000px;
+    height: auto !important;
+}
+
+.overzicht {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.overzicht th, .overzicht td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.overzicht th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.overzicht tr {
+    background-color: #f9f9f9;
+}
+
+.overzicht tr:hover {
+    background-color: #e6f7ff;
+}
+
+.overzicht td a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.overzicht td a:hover {
+    text-decoration: underline;
+    color: #003366;
+}
+
+.dashboard-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.dashboard-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboard-menu li a {
+    display: block;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-menu li a:hover {
+    background-color: #0056b3;
+}
+footer {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    border-top: 1px solid rgba(240, 245, 255, 0.3);
+}
+.center {
+  text-align: center;
+}
